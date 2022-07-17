@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_productlist">
+
+    <fragment
+        android:id="@+id/navigation_productlist"
+        android:name="com.kushalsharma.fairyuserapp.ui.productList.ProductListFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_productlist" >
+        <action
+            android:id="@+id/action_navigation_productlist_to_addProductFragment"
+            app:destination="@id/addProductFragment"
+            app:enterAnim="@android:anim/fade_in" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.kushalsharma.fairyuserapp.ui.profile.ProfileFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.kushalsharma.fairyuserapp.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.kushalsharma.fairyuserapp.ui.Map.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/addProductFragment"
+        android:name="com.kushalsharma.fairyuserapp.ui.addProduct.AddProductFragment"
+        android:label="fragment_add_product"
+        tools:layout="@layout/fragment_add_product" >
+        <action
+            android:id="@+id/action_addProductFragment_to_navigation_productlist"
+            app:destination="@id/navigation_productlist"
+            app:enterAnim="@android:anim/fade_in" />
+    </fragment>
+</navigation>

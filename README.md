@@ -2,6 +2,10 @@
 
 **FairyWalla and FairyUser App is a complete project. Also check, FairyUser App after checking this so that you can get complete glimpse of our project.**
 
+
+![FairyUser](https://user-images.githubusercontent.com/65327113/179409515-eecf92ae-9842-44cd-99d6-8510d77476e7.jpg)
+
+
 With FairyUser app fairywalla able to get on user's location. With Fairywalla app user will be able to see fairywalla, their location, their products and book them to come at user's location. 
 
 ## The problem it solves
